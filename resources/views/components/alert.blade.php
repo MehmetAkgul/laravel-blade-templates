@@ -1,5 +1,6 @@
-<div class="alert alert-{{ $type }}">
-    {{ $message }}
-<br>
-    denemee
+<span class="alert-title">{{ $title }}</span>
+
+
+<div class="alert alert-{{$type}}">
+    {{ $slot }}
 </div>

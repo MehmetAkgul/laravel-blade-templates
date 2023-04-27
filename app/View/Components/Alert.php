@@ -11,12 +11,12 @@ use Illuminate\View\Component;
 class Alert extends Component
 {
     public string $type;
-    public string $message;
-
-    public function __construct($alertType, $message)
+    public string $title;
+    protected $except = [];
+    public function __construct($type, $title)
     {
-        $this->type = $alertType;
-        $this->message = $message;
+        $this->type = $type;
+        $this->title = $title;
     }
 
     /**
@@ -24,12 +24,14 @@ class Alert extends Component
      */
     public function render(): View|Closure|string
     {
+
+
         return view('components.alert');
     }
 
     public function shouldRender(): bool
     {
-        return Str::length($this->message) > 0;
+        return Str::length($this->title) > 0;
     }
 
 }

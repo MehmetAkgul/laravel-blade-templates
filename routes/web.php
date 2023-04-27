@@ -28,3 +28,4 @@ Route::get('/each', function () { return view('each'); })->name("each");
 Route::get('/once', function () { return view('once'); })->name("once");
 Route::get('/components', function () { return view('components'); })->name("components");
 Route::get('/components-alert', function () { return view('components-alert'); })->name("components-alert");
+Route::get('/components-button', function () { return view('components-button'); })->name("components-button");

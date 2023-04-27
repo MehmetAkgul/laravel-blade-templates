@@ -39,6 +39,7 @@ bu derste blade templates isliyoruz
     <li><a href="{{route("once")}}"> once directives </a></li>
     <li><a href="{{route("components")}}"> components  </a></li>
     <li><a href="{{route("components-alert")}}"> components-alert  </a></li>
+    <li><a href="{{route("components-button")}}"> components-button  </a></li>
 </ul>
 </body>
 </html>

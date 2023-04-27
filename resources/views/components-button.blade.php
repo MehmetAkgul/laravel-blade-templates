@@ -12,11 +12,11 @@
 
 </head>
 <body style="text-align: center">
-@php( $title="bu sbir balsik ifadesidir")
 
-<x-alert type="error" :$title>
-    <strong>Whoops!</strong> Something went wrong!
-</x-alert>
+
+
+<x-forms.button type="submit"/>
+
 
 <a href="{{url("/")}}">Geri Don</a>
 </body>
